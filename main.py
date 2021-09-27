@@ -1,2 +1,8 @@
 #!/usr/bin/env python3
-print ("hello world!")
+
+import requests
+url = "https://checkip.amazonaws.com/"
+
+resp = requests.get(url)
+
+print(resp.text)
